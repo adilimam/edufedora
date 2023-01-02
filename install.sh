@@ -8,13 +8,13 @@ sudo cp sof-apl-da7219.tplg /lib/firmware/intel/sof-tplg/
 sudo cp inteldsp.conf /etc/modprobe.d/
 
 # Install the necessary extensions
-sudo dnf install gnome-extensions-app gnome-shell-extension-dash-to-dock
-sudo dnf install gnome-tweaks
+sudo dnf install gnome-extensions-app gnome-shell-extension-dash-to-dock -y
+sudo dnf install gnome-tweaks -y
 
 # enable dash to dock, enable Applications menu, enable minimize and maximize buttons
 
-sudo dnf group install --with-optional "Educational Software"
-sudo dnf install ffmpeg-free
+sudo dnf group install --with-optional "Educational Software" -y
+sudo dnf install ffmpeg-free -y
 sudo dnf install scratch -y
 sudo dnf install thonny -y
 sudo dnf install chemtool -y
