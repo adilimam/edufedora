@@ -3,6 +3,7 @@ sudo cp -n /usr/share/X11/xkb/symbols/pc /usr/share/X11/xkb/symbols/pc.bck
 sudo cp pc_keyboard_mapping.txt /usr/share/X11/xkb/symbols/pc
 
 # Fix sound
+# from https://old.reddit.com/r/chrultrabook/comments/uc0b6i/howto_audio_on_apollolake_devices_under_linux/
 sudo cp sof-apl-da7219.tplg /lib/firmware/intel/sof-tplg/
 sudo cp inteldsp.conf /etc/modprobe.d/
 
