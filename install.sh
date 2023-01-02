@@ -7,30 +7,17 @@ sudo cp pc_keyboard_mapping.txt /usr/share/X11/xkb/symbols/pc
 sudo cp sof-apl-da7219.tplg /lib/firmware/intel/sof-tplg/
 sudo cp inteldsp.conf /etc/modprobe.d/
 
-# Install the necessary extensions
+# Install necessary extensions
 sudo dnf install gnome-extensions-app gnome-shell-extension-dash-to-dock -y
 sudo dnf install gnome-tweaks -y
 
-# enable dash to dock, enable Applications menu, enable minimize and maximize buttons
-
+# Install the Fedora Educational Software group:
 sudo dnf group install --with-optional "Educational Software" -y
-sudo dnf install ffmpeg-free -y
-sudo dnf install scratch -y
-sudo dnf install thonny -y
-sudo dnf install chemtool -y
-sudo dnf install pymol -y
-sudo dnf install dia -y
-sudo dnf install gimp -y
-sudo dnf install inkscape -y
-sudo dnf install scribus -y    # 800 MB
-sudo dnf install klavaro -y
-sudo dnf install vym -y
-sudo dnf install wordnet -y
-sudo dnf install audacity -y
-sudo dnf install denemo -y
-sudo dnf install atomix -y
-sudo dnf install gbrainy -y
-sudo dnf install xboard -y
-sudo dnf install gcompris-qt -y
 
+# Remove packages that don't work well without internet access or limited resources, or are duplicitive
 sudo dnf remove gnome-boxes catgen gnome-photos kiten anki pairs ktouch fantasdic skychart corrida cantor parley kwordquiz
+
+# Install additional useful software:
+sudo dnf install ffmpeg-free gcompris-qt scratch thonny chemtool pymol dia gimp inkscape scribus klavaro vym wordnet audacity denemo atomix gbrainy -xboard y
+
+# MANUAL: enable dash to dock, enable Applications menu, enable minimize and maximize buttons
