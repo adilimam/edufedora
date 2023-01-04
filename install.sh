@@ -22,6 +22,6 @@ sudo dnf group install --with-optional "Educational Software" -y
 sudo dnf install ffmpeg-free gcompris-qt scratch thonny chemtool pymol dia gimp inkscape scribus klavaro vym wordnet audacity denemo atomix gbrainy -xboard -y
 
 # Remove packages that don't work well without internet access or with limited compute/storage, or are duplicitive
-sudo dnf remove gnome-boxes catgen gnome-photos kiten anki pairs ktouch fantasdic skychart corrida cantor parley kwordquiz
+sudo dnf remove gnome-boxes catgen gnome-photos kiten anki pairs ktouch fantasdic skychart corrida cantor parley kwordquiz -y
 
 # MANUAL: enable dash to dock, enable Applications menu, enable minimize and maximize buttons
