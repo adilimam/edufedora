@@ -11,6 +11,9 @@ sudo cp pc_keyboard_mapping.txt /usr/share/X11/xkb/symbols/pc
 # NEW
 git clone https://github.com/eupnea-linux/audio-scripts.git
 cd audio-scripts
+# Manual -- MODIFY setup-audio, comment out rmfile:
+# -    rmfile("/lib/firmware/intel/avs/max98357a-tplg.bin")
+# +    # rmfile("/lib/firmware/intel/avs/max98357a-tplg.bin")
 ./setup-audio
 cd ..
 
