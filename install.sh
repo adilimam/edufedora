@@ -58,4 +58,3 @@ read
 
 cd audio-scripts
 ./setup-audio
-cd ..
