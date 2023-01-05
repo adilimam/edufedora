@@ -26,6 +26,7 @@ sudo dnf install \
   blinken \
   kanagram \
   klettres \
+  khangman \
   xboard \
   tuxtype2 \
   klavaro \
