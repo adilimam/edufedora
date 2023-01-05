@@ -43,6 +43,7 @@ sudo dnf install \
   inkscape \
   scribus \
   vym \
+  java-17-openjdk-devel \
   -y
 
 # Remove packages that don't work well without internet access or with limited compute/storage
