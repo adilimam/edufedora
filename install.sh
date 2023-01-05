@@ -22,6 +22,13 @@ sudo dnf install \
 # Install additional software
 sudo dnf install \
   gcompris-qt \
+  gbrainy \
+  blinken \
+  kanagram \
+  klettres \
+  xboard \
+  tuxtype2 \
+  klavaro \
   scratch \
   thonny \
   pymol \
@@ -36,13 +43,6 @@ sudo dnf install \
   glglobe \
   kstars \
   stellarium \
-  gbrainy \
-  blinken \
-  kanagram \
-  klettres \
-  xboard \
-  tuxtype2 \
-  klavaro \
   denemo \
   vmpk \
   rhythmbox \
