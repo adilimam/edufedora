@@ -4,10 +4,13 @@ sudo cp pc_keyboard_mapping.txt /usr/share/X11/xkb/symbols/pc
 
 # Fix sound
 git clone https://github.com/eupnea-linux/audio-scripts.git
+
+echo "COMMENT-OUT the following line in audio-scripts/setup-audio:"
+echo '   rmfile("/lib/firmware/intel/avs/max98357a-tplg.bin")'
+echo "PRESS ENTER WHEN DONE"
+read
+
 cd audio-scripts
-# Manual -- MODIFY setup-audio, comment out rmfile:
-# -    rmfile("/lib/firmware/intel/avs/max98357a-tplg.bin")
-# +    # rmfile("/lib/firmware/intel/avs/max98357a-tplg.bin")
 ./setup-audio
 cd ..
 
